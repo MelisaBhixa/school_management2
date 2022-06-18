@@ -9,10 +9,15 @@ package za.ac.cput.service.location;
 import za.ac.cput.domain.location.Address;
 import za.ac.cput.service.IService;
 
+import java.util.List;
 import java.util.Optional;
 
 
 public interface IAddressService extends IService<Address, String> {
 
     Optional<Address> findById(String s);
+
+    void deleteById(String id);
+
+    List<Address> findAll();
 }
