@@ -1,4 +1,10 @@
 package za.ac.cput.domain.location;
+/*
+ *Country class
+ *Country.java
+ *Thina Mbiza: 217217095
+ * Date: 18/06/2022
+ */
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
