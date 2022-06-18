@@ -22,7 +22,7 @@ public class StudentAddress{
     @Embedded
     private Address address;
 
-
+    protected StudentAddress (){}
     public StudentAddress(Builder builder) {
 
         this.studentId = builder.studentId;
