@@ -1,3 +1,11 @@
+/**
+ IStudentAddressService.java
+ Entity for IStudentAddressService
+ Author: Zuko Fukula (217299911)
+ Date: 13 June 2022
+ */
+
+
 package za.ac.cput.service.lookup;
 
 import za.ac.cput.domain.lookup.StudentAddress;
