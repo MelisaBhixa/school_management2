@@ -6,6 +6,7 @@
 
 package za.ac.cput.service.location.impl;
 import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestMethodOrder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +32,7 @@ public class CityServiceTest {
     @Autowired
     private ICityService service;
 
+    @Order(1)
     @Test
     void save() {
         City saved = this.service.save(this.city);
@@ -39,7 +41,7 @@ public class CityServiceTest {
                 () -> assertEquals(this.city, saved)
         );
     }
-
+    @Order(2)
     @Test
     void read() {
         Optional<City> read = this.service.read(this.city.getId());
@@ -50,7 +52,7 @@ public class CityServiceTest {
         );
     }
 
-
+    @Order(3)
     @Test
     void findAll() {
         List<City> cityList = this.service.findAll();
@@ -58,6 +60,7 @@ public class CityServiceTest {
         assertEquals(1, cityList.size());
     }
 
+    @Order(4)
     @Test
     void delete() {
         this.service.delete(this.city);
