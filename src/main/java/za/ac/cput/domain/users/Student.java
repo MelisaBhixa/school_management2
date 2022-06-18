@@ -9,12 +9,21 @@ package za.ac.cput.domain.users;
 
 import za.ac.cput.domain.userInfo.Name;
 
+import javax.persistence.Embedded;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+
+@Entity
 public class Student {
 
+    @NotNull @Id
     private String studentId;
     private String email;
+    @Embedded
     private Name name;
 
+    protected Student (){}
 
     public Student(Student.Builder builder) {
 
