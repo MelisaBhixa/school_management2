@@ -10,7 +10,7 @@ package za.ac.cput.factory.location;
 import za.ac.cput.domain.location.Country;
 
 public class CountryFactory {
-    public static Country build (String id, String name){
+    public static Country createCountry (String id, String name){
         if(id ==null || id.isEmpty() )
             throw new IllegalArgumentException("Country Id is required!");
         if(name ==null|| name.isEmpty() )
