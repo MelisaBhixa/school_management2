@@ -2,7 +2,7 @@
  StudentFactoryTest.java
  Factory test for Student
  Author: Zuko Fukula (217299911)
- Date: 16 June 2022
+ Date: 15 June 2022
  */
 
 package za.ac.cput.factory.users;
