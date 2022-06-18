@@ -17,32 +17,32 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CountryFactoryTest {
 
-    Country country_id = CountryFactory.createCountry("244", "Angola");
+    Country id = CountryFactory.createCountry("SA", "South Africa");
 
     @Test
     public void saveCountryTest() {
-        Country country = CountryFactory.createCountry("244", "Angola");// TODO: 2022/06/13 Implement with proper Name instance.
+        Country country = CountryFactory.createCountry("SA", "South Africa");// TODO: 2022/06/13 Implement with proper Name instance.
         System.out.println(country);
         assertNotNull(country);
     }//Save new country...TEST IS SUPPOSED TO PASS
 
     @Test
     public void failInvalidNameTest() {
-        Country country = CountryFactory.createCountry("244", null);
+        Country country = CountryFactory.createCountry("SA", null);
         System.out.println(country);
         assertNotNull(country);
     } // No Id provided...TEST IS SUPPOSED TO FAIL!
 
     @Test
     public void failInvalidIdTest() {
-        Country country = CountryFactory.createCountry(null, "Angola");
+        Country country = CountryFactory.createCountry(null, "South Africa");
         System.out.println(country);
         assertNotNull(country);
     } // No ID provided...TEST IS SUPPOSED TO FAIL!
 
     @Test
     public void testForIdentity() {
-        assertSame("244", "424");
+        assertSame("SA", "SAA");
     } //Not same ID provided...TEST IS SUPPOSED TO FAIL!
 
     @Test
@@ -55,7 +55,7 @@ class CountryFactoryTest {
     @Disabled("Test Disabled")
     @Test
     public void testDisable() {
-        Country country = CountryFactory.createCountry("001", "United States");
+        Country country = CountryFactory.createCountry("SA", "South Africa");
         assertSame("United States", country.getId());
         org.junit.jupiter.api.Assertions.fail("This test should fail. Program still being developed!");
     }//Test has been disabled...EST IS SUPPOSED TO BE IGNORED!
