@@ -1,3 +1,11 @@
+/**
+ IStudentAddressRepository.java
+ Entity for IStudentAddressRepository
+ Author: Zuko Fukula (217299911)
+ Date: 13 June 2022
+ */
+
+
 package za.ac.cput.repository.lookup;
 
 import org.springframework.data.jpa.repository.JpaRepository;
