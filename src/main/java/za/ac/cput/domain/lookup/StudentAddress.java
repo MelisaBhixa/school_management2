@@ -29,7 +29,7 @@ public class StudentAddress{
         this.address = builder.address;
     }
 
-    public String getStudentID() { return studentId; }
+    public String getStudentId() { return studentId; }
 
     public Address getAddress() {
         return address;
