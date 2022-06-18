@@ -1,7 +1,7 @@
 package za.ac.cput.factory.location;
 
 /*
- *CountryFactoryTest class
+ *Country Factory Test class
  *CountryFactoryTest.java
  * Thina Mbiza: 217217095
  * Date: 18/06/2022
