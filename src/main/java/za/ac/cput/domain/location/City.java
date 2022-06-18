@@ -38,7 +38,7 @@ public class City {
         this.country = cityBuilder.country;
     }
 
-    protected City() {
+    public City() {
     }
 
     public String getId() {
