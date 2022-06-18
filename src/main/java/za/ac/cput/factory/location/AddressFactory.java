@@ -22,5 +22,9 @@ public class AddressFactory {
                 .setPostalCode(postalCode)
                 .build();
     }
+
+    public static Address createAddress(String unitNumber, String complexName, String streetNumber, String streetName, int postalCode, City city) {
+        return null;
+    }
 }
 
