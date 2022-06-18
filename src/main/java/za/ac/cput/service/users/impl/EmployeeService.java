@@ -43,4 +43,9 @@ public class EmployeeService implements IEmployeeService {
     public void deleteById(String id) {
         this.repository.deleteById(id);
     }
+
+    @Override
+    public Optional<Employee> findByEmail(String email) {
+        return this.repository.findByEmail(email);
+    }
 }
