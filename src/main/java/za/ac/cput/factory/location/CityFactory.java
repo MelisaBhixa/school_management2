@@ -11,7 +11,7 @@ import za.ac.cput.domain.location.Country;
 import za.ac.cput.util.Helper;
 
 public class CityFactory {
-    public static City createCity (String id, String name, Country country){
+    public static City createCity(String id, String name, Country country){
 
         Helper.checkStringParam("id", id);
         Helper.checkStringParam("name", name);
