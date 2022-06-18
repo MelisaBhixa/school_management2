@@ -47,4 +47,9 @@ public class StudentService implements IStudentService {
 
     @Override
     public void deleteById(String id) {this.repository.deleteById(id);}
+
+    @Override
+    public Optional<Student> findByEmail(String email) {
+        return this.repository.findByEmail(email);
+    }
 }

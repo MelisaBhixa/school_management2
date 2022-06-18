@@ -12,8 +12,10 @@ import za.ac.cput.domain.users.Student;
 import za.ac.cput.service.IService;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface IStudentService extends IService<Student, String> {
     List<Student> findAll();
     void deleteById(String id);
+    Optional<Student> findByEmail(String email);
 }
