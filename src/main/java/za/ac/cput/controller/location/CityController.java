@@ -19,7 +19,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("school_db/city")
+@RequestMapping("school-management/city")
 
 public class CityController {
 
